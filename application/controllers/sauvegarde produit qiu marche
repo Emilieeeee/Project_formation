@@ -1,0 +1,178 @@
+sauvegarde produit qiu marche
+
+
+	<?php
+// application/controllers/Produits.php
+ 
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Produits extends CI_Controller{
+
+     
+
+// Appels des differentes fonctions pr la page liste
+// 1 class  par table regroupe l'ensemble des methodes qui font appel à cette table 
+// 1 function par page qui utilise la même table
+
+        // methode liste de la classe produit
+        public function liste()
+        { 
+
+
+
+
+        // On charge le modèle 'produits_model'
+    
+       $this->load->model('produits_model');
+
+
+        // On appelle la méthode liste() du modèle,
+       $aListe = $this->produits_model->liste();
+
+     // Déclaration du tableau associatif à tranmettre à la vue
+    // Ajoute des résultats de la requête au tableau des variables à transmettre à la vue      
+        $aView["liste_produits"] = $aListe;
+    // Appel de la vue avec transmission du tableau  
+    $this->load->view('liste', $aView);
+
+
+    }
+
+
+ public function ajout(){
+     $this->load->helper('form');
+    $this->load->library('form_validation');
+    $this->load-> library ( 'upload') ;
+
+        // On charge le modèle 'produits_model'
+        if($this->input->post()){ // 2ème appel de la page: traitement du formulaire
+
+            $this->load->model('produits_model');
+            // On appelle la méthode liste() du modèle,(syntaxe $this->nom_modele->methode() )
+            $aListe = $this->produits_model->ajout(); 
+
+            // $aListe = $this->produits_model->do_upload();
+
+    
+            
+
+
+
+    
+            redirect("produits/liste");
+             
+ 
+         } 
+    else 
+    { // 1er appel de la page: affichage du formulaire
+      $this->load->view('ajout');
+    }
+
+
+
+
+
+ }
+
+
+public function f_modif($id) {
+    
+    $this->load->helper('url');
+    
+    $this->load->helper('form');
+
+                if ($this->input->post()) 
+    
+                        {   
+                        // récupérer les données envoyées par le formulaire
+
+                            $data = $this->input->post();
+
+                            $this->db->where('pro_id', $id);
+
+    
+                            $this->db->update('produits', $data);
+   
+                            redirect('produits/liste');
+
+                           
+    
+                        } 
+    
+                else 
+    
+                        {
+    
+                             $aListe = $this->db->query("SELECT * FROM produits WHERE pro_id= ?", array($id));
+    
+                            $aView["produits"] = $aListe->row(); // première ligne du résultat
+    
+                            $this->load->view('f_modif', $aView);
+    
+                        }
+
+
+        }
+
+
+public function fiche_supprime($id){
+            $this->load->helper('url');
+            $this->load->helper('form');
+
+      
+           
+                  //  affichage de la vignette et mini formulare 
+                         $aListe = $this->db->query("SELECT * FROM produits WHERE pro_id= ?", array($id));
+    
+                            $aView["produits"] = $aListe->row(); 
+                            $this->load->view('fiche_supprime',$aView,$id);
+                   
+                        }
+
+public function supprime($id=''){
+
+                            
+
+                            $this->db->where('pro_id', $id);
+                            $this->db->DELETE('produits');
+
+                            redirect('index');
+
+                        }
+    
+
+
+
+
+
+
+// {
+    
+// $this->load->model('f_modif');
+    
+//    // copier dans  model  $liste = $this->db->query("SELECT * FROM produits WHERE id= ?", $id);
+
+
+//     $aView["liste_produits"] = $aListe;
+//     $model["produits"] = $liste->row(); // première ligne du résultat
+    
+//     $this->load->view('f_modif', $model);
+    
+//}
+
+
+
+
+
+
+// 1 methode = 1 fonction 
+
+	
+// public function ajout()
+// {
+// 	// CHARGE L'ASSISTANT FORMULAIRE
+//     $this->load->helper('form');
+   
+//  // 
+//     }
+ } 

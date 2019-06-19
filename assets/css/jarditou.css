@@ -1,0 +1,270 @@
+/* CSS  */
+body { 
+    margin:0;
+    height: auto;
+    max-height: 100 %:;
+    max-width :100%;
+    width :100%;
+    color:#6b8c42;
+}
+#text{
+    color:#6b8c42;
+}
+h1{ 
+	color:#6b8c42;
+    margin:  40px 20px;
+    align-content: center;    
+
+}
+
+h3{ 
+    color:#6b8c42;
+    margin: 20px;
+   text-align: center;
+
+}
+h5{ 
+    color:#6b8c42;
+    margin: 20px;
+   text-align: center;
+
+}
+section {
+    width: 100%;
+    margin: auto;
+    
+} 
+/*CSS page acceuil */
+
+#nopad{
+    padding=0;
+}
+
+
+.st2{
+    display: flex;
+    align-self: flex-start;
+}
+.st1{
+   /* display: flex;
+    align-content: space-around;*/
+    margin:0px;
+    margin-right: 15px;
+    margin-left: 15px
+    padding:0px;
+
+}
+ 
+
+.cadre {
+    position: relative;
+    display: -ms-flexbox;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: thin solid #dbe9b7;
+    border-radius: 10px;
+    border-radius: 10px;
+}
+
+/*
+
+        border-radius: 10px;
+    display: flex;
+    padding: 20px 20px 0px 20px;
+    margin-top:20px;
+    align-content: space-around;
+    border-style: solid ;
+    border-color: #dbe9b7;
+    border-width: thin;
+    border-radius: 10px;
+}
+
+*/
+.cadre2 { 
+    
+    padding: 20px 20px 0px 20px;
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid ;
+    border-color: #dbe9b7;
+    border-width: thin;
+    border-radius: 10px;
+}
+
+.logo{
+    height: 20%;
+    
+}
+
+.vignette {
+text-align: auto;
+
+}
+
+.vignette.p {
+    margin-top: 5%;
+}
+
+.vignette.h3 {
+padding: 5%;
+
+
+}
+
+/*CSS liste produit */
+
+
+table.img-thumbnail.tabvig {
+    
+    max-width: 100px;
+    height: auto;
+}
+
+
+.photoliste{
+    max-width: 40px;
+    length:auto;
+}
+
+/*CSS FORMULAIRE ajout produit */
+.boutonenvoie2 {
+   
+   
+     width: 97px;
+    margin:auto;
+    color:#DBE9B7;
+    font-style: normal;
+    position: right;
+    text-align: center;
+    background-color: #6B8C42;
+    
+    
+}
+
+
+
+
+/*CSS FORMULAIRE produit */
+.formproduit.input{ 
+margin-left: 10%;
+
+
+}
+select.input {
+   
+    border-style: solid;
+    border-color: #dbe9b7;
+    border-width: thin;
+    border-radius: 10px;
+    color:#dbe9b7;
+    font-style: italic;
+}
+
+.formvert{
+    background: #6b8c42;
+    
+}
+
+
+/*CSS FORMULAIRE coordonnées */
+#merci{
+    font-weight: normal;
+    font-size: 1.4 rem;
+    color:#6b8c42;
+    font-style: normal;
+  
+}
+
+#texteradio{color:#6b8c42;
+    
+}
+
+#formulaire{
+    margin: 2%;
+    padding: 2%;
+   color:#6b8c42;
+}
+
+fieldset legend{
+    max-width: max-content;
+    color:#6b8c42;
+}
+.partieform{
+    min-width: 250px;
+    margin: 20px;
+    padding:2%;
+    border-style: solid ;
+    border-color: #dbe9b7;
+    border-width: thin;
+    border-radius: 10px;
+}
+
+label{
+    width: 30%;
+    color:#6b8c42;
+}
+input {
+   
+    border-style: solid;
+    border-color: #dbe9b7;
+    border-width: thin;
+    border-radius: 10px;
+    color:#dbe9b7;
+    font-style: italic;
+}
+.decal.input{
+    padding-left: 5%;
+}
+
+.value{
+    color:#dbe9b7;
+    padding-left:  10%;
+}
+
+textarea{
+    margin-left: 20%;
+    width: 80%;
+    border-style:solid;
+    border-width: thin;
+    border-radius: 2px;
+    border-color: #dbe9b7;
+    color:#6b8c42;
+    
+}
+placeholder {
+    color: #6B8C42;
+}
+.boutonenvoie {
+   
+    width: 97px;
+    margin:auto;
+    color:#DBE9B7;
+    font-style: normal;
+    position: right;
+    text-align: center;
+    background-color: #6B8C42;
+    
+}
+
+#boutonenvoie.value{
+    text-align: center;
+}
+placeholder {
+    color: #6B8C42;
+}
+
+/*CSS Footer*/
+
+footer{
+text-align: center;
+padding-top: 50px;
+justify-content="center";
+width: 100;
+}
+$breadcrumb-divider: none;

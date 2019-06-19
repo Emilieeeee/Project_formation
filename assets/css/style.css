@@ -1,0 +1,548 @@
+﻿/* CSS  */
+body { 
+    background-color:#FFF;
+    margin:0;
+    height: auto;
+    max-height: 100 %;
+    max-width :100%;
+    width :100%;
+    color:#6b8c42;
+}
+#text{
+    color:#6b8c42;
+}
+
+a:link 
+{ 
+text-decoration:none; 
+} 
+
+.lien {
+    color:#6b8c42;
+    background-color: #dbe9b7;
+    margin-bottom: 10px;
+}
+
+.lien:hover{
+    color:#dbe9b7;
+    background-color: #6b8c42;
+}
+
+
+h1{ 
+	color:#8c4259;
+    margin:  40px 20px;
+    align-content: center;    
+
+}
+
+h2{ 
+	
+    margin:  40px 20px;
+    align-content: center;    
+
+}
+
+h3{ 
+    color:#6b8c42;
+    margin: 20px;
+   text-align: center;
+
+}
+h5{ 
+    color:#6b8c42;
+    margin: 20px;
+   text-align: center;
+
+}
+
+.consigne{
+    
+}
+
+a{color:#6b8c42;
+/* background-color:rgba(234, 239, 206, 0.58);   */
+    
+}
+/*
+tr.a{color:#6b8c42;
+ background-color:rgba(234, 239, 206, 0.58);   
+    
+}
+*/
+
+a:hover {
+ color:#7eb738;
+ background-color:rgba(234, 239, 206, 0.58);   
+}
+
+.supprimer:hover{
+background-color:rgb(255, 255, 255); 
+}
+
+/*
+
+
+a.supprimer{
+    color:rgb(229, 73, 67);
+    background-color:rgba(255, 255, 255, 0); 
+}
+*/
+
+.iconelien:hover{
+    background-color: rgb(252, 252, 252);
+    color:rgb(89, 183, 118);
+    
+}
+
+.orange{
+    color:rgb(250, 160, 69);
+}
+.inputqte{
+    width: 50px;
+    margin-right: 50px;
+}
+
+tr{
+    vertical-align:bottom;
+}
+
+td{
+    vertical-align:bottom;
+}
+
+tr:hover{
+    color:#7eb738;
+    background-color:rgba(241, 253, 171, 0.28); 
+}
+
+
+
+.bloquecss{ 
+    background-color:rgba(191, 191, 189, 0.58);
+    color:#a8a4a4;}
+
+a.bloquecss { background-color:rgba(157, 157, 155, 0.58);
+    color:#fffefe;  
+    
+}
+.bloquecss:hover{
+            background-color:rgba(106, 106, 105, 0.58);
+            color:#e0e0e0;
+                }
+
+#listelien
+
+.pasbloquecss{}
+
+section {
+    width: 100%;
+    margin: auto;
+    
+} 
+/*CSS page acceuil */
+
+#nopad{
+    padding=0;
+}
+
+
+.st2{
+    display: flex;
+    align-self: flex-start;
+}
+.st1{
+   /* display: flex;
+    align-content: space-around;*/
+    margin:0px;
+    margin-right: 15px;
+    margin-left: 15px
+    padding:0px;
+
+}
+ 
+
+.cadre {
+    position: relative;
+    display: -ms-flexbox;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: thin solid #dbe9b7;
+    border-radius: 10px;
+    border-radius: 10px;
+}
+
+/*
+
+        border-radius: 10px;
+    display: flex;
+    padding: 20px 20px 0px 20px;
+    margin-top:20px;
+    align-content: space-around;
+    border-style: solid ;
+    border-color: #dbe9b7;
+    border-width: thin;
+    border-radius: 10px;
+}
+
+*/
+.cadre2 { 
+    
+    padding: 20px 20px 0px 20px;
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid ;
+    border-color: #dbe9b7;
+    border-width: thin;
+    border-radius: 10px;
+}
+
+.logo{
+    height: 20%;
+    
+}
+
+.vignette {
+text-align: auto;
+
+}
+
+.vignette.p {
+    margin-top: 5%;
+}
+
+.vignette.h3 {
+padding: 5%;
+
+
+}
+
+/*CSS liste produit */
+.im{
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+    }
+
+table.img-thumbnail.tabvig {
+    
+    max-width: 100px;
+    height: auto;
+}
+
+
+.photoliste{
+    max-width: 40px;
+    length:auto;
+}
+
+.boutonliste{
+z-index: -300 !important;    
+width: 97px;
+margin: auto;
+margin-bottom: 20px;
+color: #9ab25d;
+font-style: normal;
+font-size:larger;
+/*font-weight:  300;*/
+position: right;
+text-align: center;
+/*background-color: rgba(230, 253, 248, 0.78);*/
+}
+.boutonliste:hover{
+z-index: -300 !important;    
+width: 97px;
+margin: auto;
+    margin-bottom: 20px;
+color: #DBE9B7;
+font-style: normal;
+font-size:larger;
+position: right;
+text-align: center;
+background-color:rgb(99, 169, 175);
+
+}
+
+
+
+
+
+/*CSS FORMULAIRE ajout categorie */
+.labelcat{
+   
+    
+}
+.inputcat{
+   margin-bottom: 20px; 
+    max-width: 250px; 
+}
+
+/*CSS FORMULAIRE ajout produit */
+.ajouttot{
+    color:#17a2b8;
+}
+.ajout{
+    z-index: 0!important; 
+    background-color: rgb(216, 228, 240);
+    color:  #8c4259;
+}
+.ajoutinput {
+    border-style: solid;
+    border-color: rgb(184, 206, 226);
+    border-width: thin;
+    border-radius: 5px;
+    color:rgb(113, 129, 144);
+    font-style: italic;
+    font-weight: 400;
+    font-size: .875rem;
+    
+}
+    
+
+.ajoutinputnobordure{
+    color:rgb(113, 129, 144);
+    font-style: italic;
+    font-weight: 400;
+    font-size: .875rem;
+    
+}
+
+.textajout{
+    color: rgb(49, 83, 116);
+    margin-top: 20px;
+}
+.boutonajout{
+z-index: 300 !important;    
+width: 97px;
+margin: auto;
+    margin-bottom: 20px;
+/*color: #DBE9B7;*/
+font-style: normal;
+position: right;
+text-align: center;
+background-color: rgb(49, 83, 116);
+}
+.boutonajoutenvoi{
+    
+/*  width: 97px;*/
+/*margin: auto;*/
+/*color: #DBE9B7;*/
+/*font-style: normal;*/
+/*position: right;*/
+text-align: center;
+background-color: rgba(29, 110, 145, 0.97);  
+    
+}
+.grise{ 
+        -webkit-filter : opacity(0.2); 
+        filter         : opacity(0.2); 
+        max-height="200px";
+    
+    }
+.cadre{
+    max-width: 200px;
+        color:#6b8c42;
+        background-color: #f9ffeb;
+        
+    }
+}
+.fajout{
+    border-style:none; 
+    
+}
+.boutonenvoie2 {
+   
+    width: 97px;
+    margin:auto;
+    color:#DBE9B7;
+    font-style: normal;
+    position: right;
+    text-align: center;
+    background-color: #6B8C42;  
+}
+
+/*CSS FORMULAIRE Modif  */
+.textmodif{
+    color: rgb(49, 83, 116);
+    margin-top: 20px;
+}
+.modif.input{
+    color: rgb(49, 83, 116);
+}
+.modif{
+    background-color: rgba(237, 240, 232, 0.49);  
+}
+
+.boutonmodifenvoi{
+ border-style:none;   
+/*  width: 97px;*/
+/*margin: auto;*/
+color: #ffffff;
+font-style: normal;
+/*position: right;*/
+text-align: center;
+background-color: #4cb595;
+    
+}
+
+.boutonmodifenvoi:hover{
+
+   background-color: rgb(37, 198, 148); 
+ 
+    
+}
+
+
+/*CSS FORMULAIRE produit */
+.formproduit.input{ 
+margin-left: 10%;
+
+
+}
+select.input {
+   
+    border-style: solid;
+    border-color: #dbe9b7;
+    border-width: thin;
+    border-radius: 10px;
+    color:#dbe9b7;
+    font-style: italic;
+}
+
+.formvert{
+    background: #6b8c42;
+    
+}
+
+
+/*CSS FORMULAIRE coordonnées */
+#merci{
+    font-weight: normal;
+    font-size: 1.4 rem;
+    color:#6b8c42;
+    font-style: normal;
+  
+}
+
+#texteradio{color:#6b8c42;
+    
+}
+
+#formulaire{
+    margin: 2%;
+    padding: 2%;
+   color:#6b8c42;
+}
+
+fieldset legend{
+    max-width: max-content;
+    color:#6b8c42;
+}
+.partieform{
+    min-width: 250px;
+    margin: 20px;
+    padding:2%;
+    border-style: solid ;
+    border-color: #dbe9b7;
+    border-width: thin;
+    border-radius: 10px;
+}
+
+label{
+    width: 30%;
+    color:#6b8c42;
+}
+
+input {
+   
+    border-style: none;
+    border-color: #dbe9b7;
+    border-width: thin;
+    border-radius: 10px;
+    color:#86906c;
+    font-style: italic;
+}
+
+.decal.input{
+    padding-left: 5%;
+}
+
+.value{
+    color:#dbe9b7;
+    padding-left:  10%;
+}
+
+textarea{
+    margin-left: 20%;
+    width: 80%;
+    border-style:solid;
+    border-width: thin;
+    border-radius: 2px;
+    border-color: #dbe9b7;
+    color:#6b8c42;
+    
+}
+placeholder {
+    color: #6B8C42;
+}
+.boutonenvoie {
+   
+    width: 97px;
+    margin:auto;
+    color:#DBE9B7;
+    font-style: normal;
+    position: right;
+    text-align: center;
+    background-color: #6B8C42;
+    
+}
+
+#boutonenvoie.value{
+    text-align: center;
+}
+placeholder {
+    color: #6B8C42;
+}
+
+
+/*CSS ModCreacat*/
+.modcreacat{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modcontent_creacat{
+        
+    background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */ 
+        
+    }
+    
+
+
+/*CSS Footer*/
+
+footer{
+text-align: center;
+padding-top: 50px;
+justify-content="center";
+width: 100;
+}
+$breadcrumb-divider: none;
