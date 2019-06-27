@@ -8,7 +8,7 @@
 
 <h1> Inscrivez vous </h1> 
 
-
+  <?php  echo  validation_errors();  ?>
 
  <?php echo form_open(); ?>
 <!-- <form  action="" method="POST"> -->
@@ -28,18 +28,20 @@
                                 <label for="utilisateur_mail">e-Mail </label>
                        <input type="text" name="utilisateur_mail" size="50" maxlength="50"  class="text-center" value=""
                         id ="utilisateur_mail">   </br>
+                        
+                        <label for="utilisateur_nom">Nom </label>
+                       <input type="text" name="utilisateur_nom" size="50" maxlength="50"  class="text-center" value=""
+                        id ="utilisateur_nom">   </br>  
 
-                          <label for="">Mot de passe </label>
-                       <input type="text" name="" size="50" maxlength="50"  class="text-center" value=""
+                          <label for="utilisateur_a">Mot de passe </label>
+                       <input type="text" name="utilisateur_a" size="50" maxlength="50"  class="text-center" value=""
                         id ="">   </br> 
 
                           <label for="utilisateur_autre">Confirmation du mot de passe </label>
                        <input type="text" name="utilisateur_autre" size="50" maxlength="50"  class="text-center" value=""
                         id ="utilisateur_autre">   </br>   
                             
-                              <label for="utilisateur_autre">Nom </label>
-                       <input type="text" name="utilisateur_nom" size="50" maxlength="50"  class="text-center" value=""
-                        id ="utilisateur_autre">   </br>  
+                                
 
                        
 

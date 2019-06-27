@@ -34,20 +34,63 @@
         
               <div class="alert ajout" role="alert">
 
-                  <p class="textajout ajoutinput  "> Renseigner les champs puis valider pour creer un nouveau produit </p>
+                  <p class="textajout ajoutinpu  "> Renseigner les champs puis valider pour créer un nouveau produit </p>
 
 
-                  <p class="textajout">Image</p>
+
                   <div id= "imageAjout" class="col-md-6 ">
+                            
+                  <p class="textajout">Image
+                  <span id="nomfichier" class="ajoutinput ajoutinput2"></span></p>
+                  <img  id="produitImg"  src="
+                                            <?php   echo base_url('assets/images/jarditou_photos/greens.jpg') ;?> " style="max-width:200px" class="card-img img-fluid  tabvig imformmodif " alt="...">
+                  <!-- <p class=""> Cliquer pour ajouter</p> -->
+                    <!-- <img  id="produitImg"  src="
+                                            <?php   echo $nv ;?> " style="max-width:200px" class="card-img img-fluid  tabvig imformmodif " alt="..."> -->
                   </div>
-                  <div class= "cadre">
-                  <input type='file' class='ajoutinput' name='nouvellephoto' size='20'>     
+                 
+                  <div class= "">
+                  <input  id="uploadPhoto" type='file' name='nouvellephoto' class='ajoutinputphoto'  size='20'>     
                     <!--  <div>
                        <i class='fas fa-file-import fa-2x'style="size: 50px;"></i>
                         <img src="  <?php 
                         // echo  base_url('assets/images/jarditou_photos/7.png') ;?>" style="max-width:130px" class="img-fluid rounded-lg tabvig  grise" alt="..."> ?>
                         </div> -->
                   </div>
+
+                  <script>
+                    // $('#surtexte').hidden();
+                    // $('#produitImg').mouseover(function(){
+                    //     $('#surtexte').show();
+                    // }
+                    $('#produitImg').click(function(){
+                        $('#uploadPhoto').trigger('click');
+                    });
+
+                    $('#uploadPhoto').change(function(){
+                        // $('#submit-photo').trigger('click');
+                        var imageselect=$('input[name=nouvellephoto]').val();
+
+                        $('#nomfichier').html(imageselect);
+
+                        // $.get("nvelleim_json/"+imageselect, null, function(data) {
+                        //   var result = "";
+                         
+                        //  // $('#produitImg').attr('src',imageselect);}
+                    });
+
+                  
+        
+        // for (var ligne of data){
+        //     result += "<option value='" + ligne.cat_id + "' >" + ligne.cat_nom + "</option>";
+        // }
+
+
+    //     $("#cat1").html(result);
+    // });
+
+                  </script>
+                  
       
                   <label for="reference"class="textajout">Référence </label>
                   <input name="pro_ref" id ="reference" type="text"   maxlength="50"  class="text-center form-group ajoutinput" value="">   
@@ -68,6 +111,7 @@
                   <select name="cat2" id="cat2" class="text-center form-group ajoutinput">
     
                   </select>
+                  <button id="cat4" type="button" class="btn btn-sm-light ajoutinpu boutonformajout" >Nouvelle Catégorie</button>
 </br>                 
 
 
@@ -107,7 +151,7 @@
 
 </script>
                   
-                  <button id="cat4" type="button" class="btn btn-light" >Nouvelle Catégorie</button>
+                  
  
 
 

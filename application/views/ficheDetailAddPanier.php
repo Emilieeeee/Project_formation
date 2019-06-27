@@ -48,7 +48,7 @@
   <label for="qte">Choisir nombre d'article  </label>
     <input type="number" name="qte" value="1">
 
-    <a class="btn btn-outline-danger" href="<?= site_url('Panier/add/'.$produits->pro_id) ;?>" title="SUPPRIMER">AJOUTER</a>
+    <a class="btn btn-outline-info" href="<?= site_url('Panier/add/'.$produits->pro_id) ;?>" title="Ajouter">AJOUTER</a>
     <input type="submit">
     
 </form>

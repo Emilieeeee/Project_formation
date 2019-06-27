@@ -4,7 +4,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');?>
 
 
-RECHERCHE
+<!-- RECHERCHE -->
 <!-- <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group mr-2" role="group" aria-label="First group">
     <button type="button" class="btn btn-secondary">1</button>

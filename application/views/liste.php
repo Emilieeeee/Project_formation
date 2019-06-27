@@ -2,37 +2,11 @@
   
 
 <div class="container" id="hautpdroduits" class="produits">
-<h1>Liste des produits</h1>
+<h1> Liste des produits</h1>
 
 
 
-<div class="alert info">
-Chercher par catégorie 
-<form action="">
 
-<select name="cat1" id="cat1">
-    
-</select>
-
-<br>
-
-<select name="cat2" id="cat2">
-    <option value="">...</option>
-</select>
-
-</form>
-<script>
-    $("#cat2").hide();
-    $("#cat1").load("http://127.0.0.1/ci/index.php/Categorie/cat1/")
-    
-    $("#cat1").change(function() { 
-      $("#cat2").show();
-        let cat_id = $("#cat1").val();
-        $("#cat2").load("http://127.0.0.1/ci/index.php/Categorie/cat2/"+cat_id);
-    });
-</script>
-
-</div >
 <a  class=" boutonliste   btn-sm  rounded-top" href="<?= site_url('produits/ajout')?>"title="Ajouter un produit">Ajouter un produit</a>
 
 <table class="table   ligne   table-sm"> <!-- <thead>

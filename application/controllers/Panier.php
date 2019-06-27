@@ -62,15 +62,15 @@ public function add($id) {
                     // $tab[$ligne]->quantite = $q;
 
 //recupère la qté dejà enregistrée qui correspond à la ligne concernée d ela liste 
-                    var_dump($tab[$ligne]->quantite);        
+                    // var_dump($tab[$ligne]->quantite);        
 //var_dump(($tab[$ligne]->quantite));
 //var_dump($tab);
          
-                    var_dump($qte);
+                    // var_dump($qte);
 
                     // var_dump($pro->quantite);
                     $qte=$tab[$ligne]->quantite+$qte;
-                    var_dump($qte);
+                    // var_dump($qte);
                     $pro->quantite=$qte;
                     
                     $prod['']=$pro;
@@ -108,7 +108,7 @@ public function add($id) {
         } 
 
         else {
-        $this->output->enable_profiler(TRUE);
+        // $this->output->enable_profiler(TRUE);
         $this->load->view('navigationClient');
         $this->load->view('ficheDetailAddProduit', $data);
         

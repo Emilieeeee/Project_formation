@@ -25,22 +25,23 @@ Id : <?= $produits->pro_id; ?></H2>
               <div class="alert modif " id="haut" role="alert">
           
 
-                  <div class="row">
+                  <div class="row justify-content-center">
         	                 <div class="col-md-4 ">
                             
                                   <img src="
-                                            <?php   echo base_url('assets/images/jarditou_photos/'.$produits->pro_id.".".$produits->pro_photo) ;?> " max-height="300px" style="max-width:200px" class="img-fluid rounded-lg tabvig " alt="...">
+                                            <?php   echo base_url('assets/images/jarditou_photos/'.$produits->pro_id.".".$produits->pro_photo) ;?> " max-height="300px" style="max-width:200px" class="img-fluid rounded-lg tabvig imformmodif " alt="...">
+
 
     		                    </div> 
 
-                            
+                             <br>
                              
 
                    
                           
                   </div>
            <!--  <input type="submit" class="boutonajoutenvoi  mx-auto rounded-pill  btn-info d-block btn-lg "  value="Valider" /> -->
-                       <input value="Enregistrer les modifications" class="boutonmodifenvoi  mx-auto rounded-pill   d-block btn-lg " type="submit" onSubmit="">
+                       <input value="Enregistrer les modifications" class="boutonmodifenvoi align-middle mx-auto rounded-pill   d-block btn-lg " type="submit" onSubmit="">
                            
                       
                        </br></br>
@@ -117,6 +118,7 @@ Id : <?= $produits->pro_id; ?></H2>
                 </p>
         	      <label for="date_modif"></label> <input  class="text-center"type="hidden" name="pro_d_modif" size="50" maxlength="50" value="<?= date("y:m:d:H:i:s") ?>   " 
                 id ="date_modif"> </br>
+                <input value="Enregistrer les modifications" class="boutonmodifenvoi align-middle mx-auto rounded-pill   d-block btn-lg " type="submit" onSubmit="">
 
 </div></div>   
 <a href="#haut" title="haut de page">Haut de page</a>

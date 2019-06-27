@@ -1,5 +1,5 @@
 <!-- selectCat -->
-
+<!-- 
 Chercher par cat"gorie 
 <form action="">
 
@@ -13,7 +13,7 @@ Chercher par cat"gorie
     <option value="">...</option>
 </select>
 
-</form>
+</form> -->
 
 <script>
     $("#cat2").hide();

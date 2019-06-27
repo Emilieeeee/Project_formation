@@ -22,16 +22,23 @@
 
                   <div class="row">
         	                 <div class="col-md-12 ">
-                            
-                               
-                     <a href="#" class="badge badge-primary">Primary</a>
-<a href="#" class="badge badge-secondary">Secondary</a>
-<a href="#" class="badge badge-success">Success</a>
-<a href="#" class="badge badge-danger">Danger</a>
-<a href="#" class="badge badge-warning">Warning</a>
-<a href="#" class="badge badge-info">Info</a>
-<a href="#" class="badge badge-light">Light</a>
-<a href="#" class="badge badge-dark">Dark</a>
+ <div class="row">
+<div class="col-md-4 ">
+<h5> Mes informations </h5>
+</div>
+<div class="col-md-4 ">
+<h5> Mes informations </h5>
+</div>
+</div>
+<!-- <a href="#" class="btn btn-info">Primary</a>
+
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button> -->
                 
                     
                             </div>     

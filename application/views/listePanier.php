@@ -13,8 +13,10 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
     <th>Libelle</th>
     <th>couleur</th>
     <th>Quantite</th>
-    <th>Prix</th>
+    <th>Prix unitaire</th>
+
     <th>Total</th>
+    <th></th>
     </tr>
 
 
@@ -24,7 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
         foreach ($this->session->panier as $pro):
         $idqte= $pro->pro_id;
     ?>
-        <tr>
+        <tr class="inputqte2" >
             <td><?= $pro->pro_ref ?></td>
             <td><?= $pro->pro_libelle ?></td>
             <td><?= $pro->pro_couleur ?></td>
@@ -34,14 +36,19 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
               
                 <input type="hidden" value="<?= $pro->pro_id ?>" name="" id="" class="inputqte" size="20">
 
-                <input type="number" value="<?= $pro->quantite ?>" data-id="<?= $pro->pro_id ?>"  class="inputqte" size="20">
+                <input class="inputqte" type="number" value="<?= $pro->quantite ?>" 
+                data-id="<?= $pro->pro_id ?>"
+                data-priuni="<?= $pro->pro_prix ?>"  
+                size="20"
+                name="qteart">
 
               <a  id=""  class="supprimer btn-sm rounded-circle" href=" <?=site_url('panier/addmodif/'.$pro->pro_id);?>"  title="modifier la qte">modifier la qte</a>
                 
             </td>
+            <td class="tot" name="priuni"><?= $pro->pro_prix ?></td>  
+            <td class="totart" name="totart" id=""><?= $pro->pro_prix*$pro->quantite ?></td>  
 
-            <td class="tot"><?= $pro->pro_prix*$pro->quantite ?></td>  
-            <td><a  id="qteliste"  class="supprimer btn-sm rounded-circle" href=" <?=site_url('panier/supprimeligne/'.$pro->pro_id);?>"  title="supprimer le produit">
+            <td><a  id=""  class="supprimer btn-sm rounded-circle" href=" <?=site_url('panier/supprimeligne/'.$pro->pro_id);?>"  title="supprimer le produit">
 
 
           <i class="fas fa-ban fa-xs" style="color: #ff6b6b;"></i>
@@ -77,22 +84,42 @@ TOTAL= <?= $total ?>
 <script>
 
 
- 
+ // test au changement sur la ligne 
+
+$(".inputqte2").change(function(){ 
+console.log('Y ADUCHANGEMENT');
+var prixxuni =$(this)
+console.log('prixxuni');
+});
 
 
 
-// definir ici la classe de l'input pr que ça remarche 
-  $("").change(function(){ 
+// definir ici la classe de l'input pr que ça remarche#qteliste 
+
+$(".inputqte").change(function(){ 
  // var donnees = $(this).serialize();
  
          var qte = $(this).val();
          var id = $(this).data('id');
+         var prix = $(this).data('priuni')*qte;
+         // var totalpanier=
          // var qte = $(this)[name='qteliste']['val()'];
 
         // var qte = $(this.'#qteliste:selected').val();
 
-         console.log(qte);
-         console.log(id);
+        console.log(qte);
+        console.log(id);
+        console.log(prix);
+
+
+        // .replaceWith()
+         $(".totart").html(prix);
+
+          // $(".totart").html(function() {
+
+
+
+          // });
 
 
    

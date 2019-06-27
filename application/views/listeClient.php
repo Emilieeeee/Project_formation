@@ -72,13 +72,15 @@ else {echo '';}
          
  <?php if (!$row->pro_bloque==1){ ?>
           
-        <td><a  class="supprimer btn-sm rounded-circle" href="<?= site_url("Panier/add/").$row->pro_id ?>"  title="ajout rapide au panier "><i class="fas fa-cart-arrow-down"></i>
+        <!-- <td><a  class="supprimer btn-sm rounded-circle" href="<?= site_url("Panier/add/").$row->pro_id ?>"  title="ajout rapide au panier "><i class="fas fa-cart-arrow-down"></i>
           
-        </a> </td> 
+        </a> </td>  -->
         <td><a  class="supprimer btn-sm rounded-circle" href="<?= site_url("Panier/add/").$row->pro_id ?>"  title="formulaire ajout au panier "><i class="fas fa-cart-plus orange"></i>
           
         </a> </td>
-         <?php ;} else { echo '<td><i class="fas fa-exclamation-triangle"></i> </td><td><i class="fas fa-exclamation-triangle"></i> </td>  ';} ?>
+          <?php ;} else { echo '
+          
+          <td><i class="fas fa-exclamation-triangle"></i> </td>  ';} ?>
 
         <?php ;} ?>
 

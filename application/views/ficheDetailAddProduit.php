@@ -47,15 +47,15 @@
 
 
 
-   </div>
+  
   </div>
   <form action="" method="post">
 
     <label for="qte">Choisir nombre d'article  </label>
-    <input type="number" value="1"name="qte" class="inputqte" size="3">
+    <input type="number" value="1"name="qte" class="inputqte" size="3"></br>
 
    
-    <input type="submit" value="AJOUTER" class="btn btn-outline-danger" >
+    <input type="submit" value="AJOUTER" class="btn btn-outline-info" >
     
 </form>
 </div>

@@ -6,7 +6,7 @@
 
 <h1> Connectez vous  </h1> 
 
-
+ <?php echo validation_errors(); ?>
 
  <?php echo form_open(''); ?>
 <!-- <form  action="" method="POST"> -->

@@ -24,37 +24,39 @@
 <body>
 <header > 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center sticky-top"> <span>
-<img height='60px' width="auto" id=" logo"  src= <?= base_url("assets/images/jarditou_logo.jpg"); ?> >
-  </span>
-  <span>
-  <ul  class="nav justify-content-center " >
-  <li class="nav-item"><a class="nav-link btn-outline-success " 
-    href="<?php if($this->session->user){echo site_url('Produits/bienvenue');}
-          else {echo site_url('Produits/liste');} ?>" 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between sticky-top"> 
+        <span class="">
+            <img height='60px' width="auto" id=" logo"  src= <?= base_url("assets/images/jarditou_logo.jpg"); ?> >
+        </span>
+        <span class="">
+              <ul  class="nav justify-content-center " >
+              <li class="nav-item"><a class="nav-link btn-outline navi " 
+                  href="
+                  <?php 
+                  if($this->session->user){
+                        echo site_url('Produits/bienvenue');
+                      }
+
+                   else {echo site_url('Produits/liste');
+                 } ?>" 
          
+                  title="retourner à l'acceuil du site"> Accueil </a>
+               </li>
 
-          title="retourner à l'acceuil du site"> Accueil </a></li>
+              <li class="nav-item"><a class="nav-link btn-outline navi " href="<?= site_url('produits/liste') ;?>" title="début de liste produit ">Produits</a></li> 
+        </span >
 
-
-
-  <li class="nav-item"><a class="nav-link btn-outline-success " href="<?= site_url('produits/liste') ;?>" title="début de liste produit ">Produits</a></li>
-		
- 
- 
-   
- 
-
-<li class="nav-item">
-<?php if ($this->session->user): ?>
+          <span>
+     <li class="nav-item">
+   <?php if ($this->session->user): ?>
      
-	<li class="nav-item"><a class="nav-link btn-outline-success " href="<?= site_url('Panier/listePanier')?>" title="Ajouter un produit">Panier</a></li>
-  <a class="nav-link btn-outline-success" href="<?= site_url('Users/deconnexion')?>" title="page de deconnexion"> <i class="fas fa-user"></i> Deconnexion </a>
+	<li class="nav-item"><a class="nav-link btn-outline navi " href="<?= site_url('Panier/listePanier')?>" title="Ajouter un produit">Panier</a></li>
+  <a class="nav-link btn-outline navi" href="<?= site_url('Users/deconnexion')?>" title="page de deconnexion"> <i class="fas fa-user"></i> Deconnexion </a>
          
 
                                
  <?php else: ?>                               
-   <a class="nav-link btn-outline-success" href="<?= site_url('Users/connexion')?>" title="page de connexion"> Connexion </a>                                 
+   <a class="nav-link btn-outline navi" href="<?= site_url('Users/connexion')?>" title="page de connexion"> Connexion </a>                                 
  <?php endif; ?>
   </li>
 
@@ -81,20 +83,37 @@
 <?php endif; ?>
 </div>
   </div>
- <div class="row justify-content-center">
-            <div class="col-6">
+ <div class="row justify-content-center" id='messageerreur' >
+            <div class="">
                 <?php if ($this->session->message): ?>
                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
                         <?php
                             echo $this->session->message;
                             $this->session->message = null;
                         ?>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                        <button id="close" type="button" class="close" aria-label="Close">
+                            <span >&times;</span>
                         </button>
                     </div>
                 <?php endif; ?>
             </div>
+
+ </div>
+<script>
+
+var modala = document.getElementById('messageerreur');
+window.click = function(event) {
+  if (event.target == modala) {
+    modala.style.display = "none";
+  }
+}
+
+  $('#close').onclic(function(){
+    modala.style.display = "none";
+      // $('#messageerreur').hide();
+      // $("#cat2").hide();
+  });
+</script>
 
 
 
